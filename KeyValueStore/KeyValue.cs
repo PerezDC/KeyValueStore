@@ -12,8 +12,8 @@ namespace KeyValueStore
 
         public KeyValue(string updateKey, T updateObject)
         {
-            this.Key = updateKey;
-            this.Value = updateObject;
+            Key = updateKey;
+            Value = updateObject;
         }
 
     }

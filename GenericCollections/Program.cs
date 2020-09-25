@@ -12,7 +12,7 @@ namespace GenericCollections
              * LinkedList<T>, DONE
              * Queue<T>, DONE
              * Stack<T>, DONE
-             * Dictionary<TKey, TValue>,
+             * Dictionary<TKey, TValue>, DONE
              * SortedList<TKey, TValue>, and
              * HashSet<T>).
              */
@@ -41,6 +41,11 @@ namespace GenericCollections
                 Console.WriteLine($"\t{item}");
             }
 
+            Console.WriteLine("\nGenerating Dictionary. \nPrinting Dictionary contents:");
+            foreach (var item in Collections.OrderDetails())
+            {
+                Console.WriteLine($"\tName: {item.Key} \tPrice: ${item.Value}");
+            }
 
         }
     }

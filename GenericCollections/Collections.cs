@@ -54,6 +54,19 @@ namespace GenericCollections
             return rushedOrders;
         }
 
+        public static Dictionary<string, int> OrderDetails()
+        {
+            Dictionary<string, int> myOrder = new Dictionary<string, int>();
+
+            myOrder.Add("David", 8);
+            myOrder.Add("Hilda", 7);
+            myOrder["Winston"] = 12;
+            myOrder["Peaches"] = 19;
+            myOrder["Mikko"] = 2;
+
+            return myOrder;
+        }
+
 
 
 

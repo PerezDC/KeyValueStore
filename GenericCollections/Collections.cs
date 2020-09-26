@@ -67,8 +67,25 @@ namespace GenericCollections
             return myOrder;
         }
 
+        public static SortedList<string, int> LuckyNumbers()
+        {
+            SortedList<string, int> myNumber = new SortedList<string, int>();
 
+            myNumber["David"] = 7;
+            myNumber["Hilda"] = 11;
+            myNumber["Winston"] = 3;
+            myNumber.Add("Peaches", 6);
+            myNumber.Add("Mikko", 1);
 
+            return myNumber;
+        }
+
+        public static HashSet<string> UserPool()
+        {
+            HashSet<string> userId = new HashSet<string>(new string[] { "davidp1", "hildamarie", "itsWinston", "PrincessPeaches", "GoodBoiMikko" });
+
+            return userId;
+        }
 
     }
 }

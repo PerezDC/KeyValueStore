@@ -13,8 +13,8 @@ namespace GenericCollections
              * Queue<T>, DONE
              * Stack<T>, DONE
              * Dictionary<TKey, TValue>, DONE
-             * SortedList<TKey, TValue>, and
-             * HashSet<T>).
+             * SortedList<TKey, TValue>, DONE
+             * HashSet<T>. DONE
              */
 
             Console.WriteLine("\nGenerating List. \nPrinting List contents:");
@@ -45,6 +45,18 @@ namespace GenericCollections
             foreach (var item in Collections.OrderDetails())
             {
                 Console.WriteLine($"\tName: {item.Key} \tPrice: ${item.Value}");
+            }
+
+            Console.WriteLine("\nGenerating SortedList. \nPrinting SortedList contents:");
+            foreach (var item in Collections.LuckyNumbers())
+            {
+                Console.WriteLine($"\tName: {item.Key} \tLucky Number: {item.Value}");
+            }
+
+            Console.WriteLine("\nGenerating HashSet. \nPrinting HashSet contents:");
+            foreach (var item in Collections.UserPool())
+            {
+                Console.WriteLine($"\tUser ID: {item}");
             }
 
         }
